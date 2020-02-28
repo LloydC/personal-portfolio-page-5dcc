@@ -16,14 +16,18 @@
     </nav>
 
     <section id="about">
-        <h1>About section</h1>
+        <h1>About</h1>
+        <div id="description">
+            <img src="images/programming-nerd.jpg" alt="" id="profile" width="300px" height="300px">
+            <p>A web developer that revels in creating user-friendly, animated and responsive websites</p>
+        </div>
     </section>
 
     <section id="work">
         <h1>Some of the projects I built </h1>
         <div id="projects">
             <!-- Add nice HTML cards here -->
-            <div class="card">
+            <div class="card" onclick="test()">
                 <img src="https://cdn.zmescience.com/wp-content/uploads/2016/08/landscape-mountains-nature-clouds-1-1024x493.jpg" alt="" width="200px" height="200px">
                 <div class="text">
                     <h5>Project 1</h5>
@@ -31,7 +35,7 @@
                 <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
             </div>
 
-            <div class="card">
+            <div class="card" onclick="this.classList.toggle('expanded')">
                 <img src="https://cdn.zmescience.com/wp-content/uploads/2016/08/landscape-mountains-nature-clouds-1-1024x493.jpg" alt="" width="200px" height="200px">
                 <div class="text">
                     <h5>Project 2</h5>
@@ -39,7 +43,7 @@
                 <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
             </div>
 
-            <div class="card">
+            <div class="card" onclick="this.classList.toggle('expanded')">
                 <img src="https://cdn.zmescience.com/wp-content/uploads/2016/08/landscape-mountains-nature-clouds-1-1024x493.jpg" alt="" width="200px" height="200px">
                 <div class="text">
                     <h5>Project 3</h5>
@@ -62,5 +66,11 @@
     <footer>
         Made with &#x1F49B; by King Code
     </footer>
+
+    <script>
+        function test(){
+            console.log('test')
+        }
+    </script>
 </body>
 </html>
